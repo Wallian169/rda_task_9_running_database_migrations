@@ -51,4 +51,4 @@ CREATE TABLE Users (
 
 --changeset unique.id:2 labels:0.0.3
 CREATE INDEX idx_email ON Users (Email);
---rollback ALTER TABLE Users DROP INDEX idx_email;
+--rollback DROP INDEX idx_email on Users;
